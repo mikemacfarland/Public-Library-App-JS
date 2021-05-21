@@ -13,16 +13,30 @@ class Library{
     removePatron(patron){
         this.patrons.pop(patron)
     }
-    // chargeFines(patrons,patron){
-        // filter(patrons){
 
-        //     // create a filter for patrons array
-        //     if (patron.book.dueDate)
-        //     // for patrons that have past due books add a fine for every
-        //     // day it is past due.
-        //     }
-        // return patron.balance = patron.balance - this.dailyFine
-    // }
+    // theres still an issue when a book gets removed form patrons book list and
+    //  charge fines is ran again.
+
+    // also fines get charged positive when book isnt overdue
+    
+    chargeFines(){
+        if (this.patrons.currentbook !== []){
+        let patrons = library.patrons
+            for (let i = 0; i < patrons.length; i++){
+                patrons[i].balance = 0
+                for (let j = 0; j < patrons[i].currentBook.length; j++){
+                    let patronsBookDueDate = patrons[i].currentBook[j].dueDate
+                    let today = new Date()
+                    let timeLate = today - patronsBookDueDate
+                    let daysLate = (timeLate/8.64e+7)
+                    let fine = 0 - (this.dailyFine * daysLate)
+                    patrons[i].balance += fine
+                }
+            }
+        }
+        else{
+            return
+        }
+    
+    }
 }
-
-
