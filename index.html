@@ -1,41 +1,30 @@
+<!DOCTYPE html>
 <head>
-  <title>Library Practice Session</title>
-  <script src = "Book.js"></script>
-  <script src = "Patron.js"></script>
-  <script src = "Library.js"></script>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Library</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <h1>Library Practice Session Project</h1>
-  <h5>Right click and use the developer tools to see the console.</h5>
+  <header>
+    <h1>Community College Library APP</h1>
+    <nav>
+      <ul class="flex">
+        <li>Employee Portal</li>
+        <li>Books</li>
+        <li>Students</li>
+      </ul>
+    </nav>
+  </header>
+    <div class="container flex">
+      <div class="employees flex">
+
+      </div>
+    </div>
 </body>
-
-<script defer>
-  // our test code here
-  const library = new Library()
-  
-
-  const book1 = new Book("Ass Goblins of Auschwitz","Cameron Pierce","1933929936","08-05-09")
-  const book2 = new Book("The Baby Jesus Butt Plug","Carleton Mellic III","0972959823","01-23-04")
-  const book3 = new Book("I Knocked Up Satan's Daughter","Carleton Mellic III","1936383829","09-06-11")
-
-  const patron1 = new Patron("Dale","440rupp69@hotmail.com")
-  const patron2 = new Patron("Jeff","mrpenis@hotmail.com")
-  
-  library.addPatron(patron1)
-  library.addPatron(patron2)
-
-  library.addBook(book1)
-  library.addBook(book2)
-  library.addBook(book3)
-
-  patron1.checkout(book1)
-  patron1.checkout(book2)
-  patron2.checkout(book2)
-  library.chargeFines()
-  // console.log(patron1)
-
-  
-  
-  
-</script>

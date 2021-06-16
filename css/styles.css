@@ -1,0 +1,34 @@
+* {
+  display: block;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  text-align: center;
+}
+
+title {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+nav ul {
+  flex-direction: column;
+}
+
+body {
+  width: 95%;
+  margin: 5% auto;
+}
+
+nav li {
+  width: 80%;
+  padding: 0.625rem;
+  margin: 0.15625rem auto;
+  background-color: #00885b;
+  border-radius: 0.15625rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
