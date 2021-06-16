@@ -3,6 +3,7 @@ nav ul{
 }
 
 body{
+    // background-color: $color-3;
     width:95%;
     margin: 5% auto;
 }
@@ -12,4 +13,27 @@ nav li{
     margin:rem(2.5) auto;
     background-color: $color-2;
     border-radius: rem(2.5);
+    border: $gray 1px solid;
+    box-shadow: 5px 2px 2.5px $gray;
 }
+
+#cardSection{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.employeeCard{
+    justify-content: space-between;
+    width: 50%;
+    margin: rem(25) auto;
+    & .cardData{
+        justify-content: center;
+    }
+}
+
+.thumbnail{
+    width: rem(75);
+    border-radius: 50%;
+    margin: rem(10) auto;
+}
+

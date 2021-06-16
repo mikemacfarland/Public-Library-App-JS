@@ -14,6 +14,16 @@ title {
   display: flex;
 }
 
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
 nav ul {
   flex-direction: column;
 }
@@ -29,6 +39,28 @@ nav li {
   margin: 0.15625rem auto;
   background-color: #00885b;
   border-radius: 0.15625rem;
+  border: grey 1px solid;
+  box-shadow: 5px 2px 2.5px grey;
+}
+
+#cardSection {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.employeeCard {
+  justify-content: space-between;
+  width: 50%;
+  margin: 1.5625rem auto;
+}
+.employeeCard .cardData {
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 4.6875rem;
+  border-radius: 50%;
+  margin: 0.625rem auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
